@@ -14,3 +14,11 @@ Then you can run `cargo generate --git https://github.com/ByersPlusPlus/bpp-comm
 After filling these out, you can start implementing the logic for your command. You should be able to use pretty much any crate with this.
 
 If you want to quickly add a new command, you can enter `bpp-cmd` in Visual Studio Code to generate another command structure, which you will only need to register down at the `register` function. Just copy and paste the generated line and replace the struct name. And of course fill in your own command details!
+
+## How to compile this?
+
+Compiling a plugin itself is pretty straight forward.
+
+If you compiled [commandservice](https://github.com/ByersPlusPlus/commandservice) on your machine without Docker, you can simply run `make`.
+
+If you intend to use the Docker container for commandservice, please run `make docker-build`, else the commandservice might not be able to load your command library due to differing glibc versions.
