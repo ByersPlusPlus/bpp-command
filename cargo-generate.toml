@@ -1,0 +1,9 @@
+[placeholders.command_name]
+type = "string"
+prompt = "What will your command be? (please include the prefix, e.g. !addcan, !strife etc.) You can add more commands later."
+default = "!mycommand"
+
+[placeholders.command_struct]
+type = "string"
+prompt = "What should the name of the struct be, that houses your command? (usually it's the similar to the command name, e.g. AddCanCommand, StrifeCommand etc.)"
+default = "MyCommand"
